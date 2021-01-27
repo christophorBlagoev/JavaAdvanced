@@ -1,5 +1,6 @@
 package L02_MultidimensionalArrays;
 
+<<<<<<< HEAD
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -52,4 +53,7 @@ public class E04_SumMatrixElements {
                 .mapToInt(Integer::parseInt)
                 .toArray();
     }
+=======
+public class E04_SumMatrixElements {
+>>>>>>> origin/master
 }
