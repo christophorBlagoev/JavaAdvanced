@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exams/Exams.iml" filepath="$PROJECT_DIR$/Exams/Exams.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaAdvanced.iml" filepath="$PROJECT_DIR$/JavaAdvanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L01_Stack And Queue/L01_Stack And Queue.iml" filepath="$PROJECT_DIR$/L01_Stack And Queue/L01_Stack And Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L02_Multidimensional Arrays/L02_Multidimensional Arrays.iml" filepath="$PROJECT_DIR$/L02_Multidimensional Arrays/L02_Multidimensional Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L04_Streams, Files And Directories/L04_Streams, Files And Directories.iml" filepath="$PROJECT_DIR$/L04_Streams, Files And Directories/L04_Streams, Files And Directories.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L05_Functional Programming/L05_Functional Programming.iml" filepath="$PROJECT_DIR$/L05_Functional Programming/L05_Functional Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L06_Defining Classes/L06_Defining Classes.iml" filepath="$PROJECT_DIR$/L06_Defining Classes/L06_Defining Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L07B_Linked List - Workshop/L07B_Linked List - Workshop.iml" filepath="$PROJECT_DIR$/L07B_Linked List - Workshop/L07B_Linked List - Workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L07_Smart Array And Smart Stack/L07_Smart Array And Smart Stack - Workshop.iml" filepath="$PROJECT_DIR$/L07_Smart Array And Smart Stack/L07_Smart Array And Smart Stack - Workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L08_Generics/L08_Generics.iml" filepath="$PROJECT_DIR$/L08_Generics/L08_Generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L09_Iterators And Comparators/L09_Iterators And Comparators.iml" filepath="$PROJECT_DIR$/L09_Iterators And Comparators/L09_Iterators And Comparators.iml" />
     </modules>
   </component>
 </project>
