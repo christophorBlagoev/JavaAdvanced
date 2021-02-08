@@ -3,7 +3,20 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/TestFolder" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/Exams" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L01_Stack and Queue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L02_Multidimensional Arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L04_Streams, Files and Directories" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L05_Functional Programming" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L06_Defining Classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L07_Workshop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L08_Generics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L09_IteratorsAndComparators" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L03_Set and Maps Advanced" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Java Advanced" />
+      <excludeFolder url="file://$MODULE_DIR$/Java OOP" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
