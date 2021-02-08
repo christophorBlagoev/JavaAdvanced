@@ -19,8 +19,11 @@ public class E12_TheMatrix {
         int row = scanner.nextInt();
         int col = scanner.nextInt();
 
+        Strategy strategy = new DFSStack();
+
         Bucket bucket = new Bucket(row, col, matrix);
-        bucket.paint();
+        bucket.paint(fillColor, strategy);
+        System.out.println(matrix.toString());
 
 
     }
@@ -30,5 +33,7 @@ public class E12_TheMatrix {
         while (linesCount-- > 0) {
             lines.add(scanner.nextLine().replaceAll("\\s+", ""));
         }
+
+        return lines;
     }
 }
