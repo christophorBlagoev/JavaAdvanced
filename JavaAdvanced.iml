@@ -15,8 +15,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L08_Generics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L09_IteratorsAndComparators" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java Advanced/L03_Set and Maps Advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java-source" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Advanced/Exams/Java Advanced Exam - 25 October 2020/Java Advanced Exam - 25 October 2020" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Java Advanced" />
       <excludeFolder url="file://$MODULE_DIR$/Java OOP" />
+      <excludeFolder url="file://$MODULE_DIR$/Java Advanced/Exams/Java Advanced Exam - 25 October 2020" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
