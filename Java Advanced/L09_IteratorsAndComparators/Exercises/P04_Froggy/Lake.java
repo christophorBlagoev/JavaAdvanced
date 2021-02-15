@@ -11,11 +11,9 @@ public class Lake implements Iterable<Integer> {
 
     @Override
     public Iterator<Integer> iterator() {
-        return new Iterator<Integer>() {
+        return new Iterator<>() {
             private int index = 0;
-            private int lastEvenIndex = stones.length % 2 == 0
-                    ? stones.length - 2
-                    : stones.length - 1;
+
             @Override
             public boolean hasNext() {
                 return index < stones.length;
@@ -23,13 +21,12 @@ public class Lake implements Iterable<Integer> {
 
             @Override
             public Integer next() {
-                if (index == lastEvenIndex) {
-                    index = 1;
-                    return stones[lastEvenIndex];
-                }
-                int element = stones[index];
+                int current = stones[index];
                 index += 2;
-                return element;
+                if (index % 2 == 0 && index >= stones.length) {
+                    index = 1;
+                }
+                return current;
             }
         };
     }

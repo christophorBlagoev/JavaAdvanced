@@ -6,16 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] stones = Arrays.stream(scanner.nextLine().split(",\\s+")).mapToInt(Integer::parseInt).toArray();
-
-        Lake lake = new Lake(stones);
-        Iterator<Integer> froggy = lake.iterator();
-
-        List<String> result = new ArrayList<>();
-        while (froggy.hasNext()) {
-            result.add(froggy.next() + "");
+        Lake lake = new Lake(Arrays.stream(scanner.nextLine().trim().split(", ")).mapToInt(Integer::parseInt).toArray());
+        Iterator< Integer > iterator = lake.iterator();
+        while (iterator.hasNext()) {
+            String current = iterator.next().toString();
+            System.out.print(iterator.hasNext() ? String.format("%s, ", current) : current);
         }
-
-        System.out.println(String.join(", ", result));
     }
 }

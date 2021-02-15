@@ -1,6 +1,6 @@
 package Exercises.E02_GenericBoxOfInteger;
 
-public class Box<T> {
+public class Box < T > {
     private T value;
 
     public Box(T value) {

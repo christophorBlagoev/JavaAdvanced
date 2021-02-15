@@ -1,9 +1,10 @@
-package Exercises.E05_GenericCountMethodString;
+package Exercises.E06_GenericCountMethodDouble;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Box<T extends Comparable<T>> {
+public class Box <T extends Comparable<T>>{
+
     private final List<T> value;
 
     public Box() {
@@ -14,7 +15,7 @@ public class Box<T extends Comparable<T>> {
         this.value.add(value);
     }
 
-    public long countGraterElements(T toCompare){
+    public long countGraterElements(T toCompare) {
         return this.value.stream().filter(e -> e.compareTo(toCompare) > 0).count();
     }
 }

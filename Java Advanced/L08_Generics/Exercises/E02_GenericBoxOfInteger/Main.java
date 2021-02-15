@@ -9,8 +9,8 @@ public class Main {
         int n = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < n; i++) {
-            String input = scanner.nextLine();
-            Box<String> box = new Box<>(input);
+            int digit = Integer.parseInt(scanner.nextLine());
+            Box<Integer> box = new Box<>(digit);
             System.out.println(box);
         }
     }
