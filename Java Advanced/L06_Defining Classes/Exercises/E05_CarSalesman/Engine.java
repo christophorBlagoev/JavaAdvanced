@@ -2,22 +2,36 @@ package Exercises.E05_CarSalesman;
 
 public class Engine {
     private String model;
-    private int power;
-    private int displacement;
+    private String power;
+    private String displacement;
     private String efficiency;
 
-    public Engine(String model, int power, int displacement, String efficiency) {
+    public Engine(String model, String power, String displacement, String efficiency) {
         this.model = model;
         this.power = power;
         this.displacement = displacement;
         this.efficiency = efficiency;
     }
 
- /*//   public Engine(String model, int power, int displacement) {
-        this(model, power, displacement, "n/a");
+    public String getModel() {
+        return model;
     }
 
-    public Engine(String model, int power, int displacement) {
-        this(model, power, displacement, "n/a");
-    }*/
+    public String getPower() {
+        return power;
+    }
+
+    public String getDisplacement() {
+        return displacement;
+    }
+
+    public String getEfficiency() {
+        return efficiency;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s:%nPower: %s%nDisplacement: %s%nEfficiency: %s",
+                getModel(), getPower(), getDisplacement(), getEfficiency());
+    }
 }
