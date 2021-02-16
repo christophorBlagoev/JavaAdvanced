@@ -27,6 +27,7 @@ public class P01_Cooking {
         cookingTable.put(100, "Fruit Pie");
 
         Map<String, Integer> productsCooked = new TreeMap<>();
+        cookingTable.values().forEach(p -> productsCooked.put(p, 0));
 
    //     cookingTable.values().stream()
       //          .forEach(p -> productsCooked.put());
@@ -46,14 +47,14 @@ public class P01_Cooking {
         if (hasCookedEachMeal(productsCooked)) {
             System.out.println("Wohoo! You succeeded in cooking all the food!");
         } else {
-            System.out.println("Ugh, what a pity! You didn't have enough materials to cook everything.");
+            System.out.println("Ugh, what a pity! You didn't have enough materials to to cook everything.");
         }
 
         System.out.println("Liquids left: " + getElementsInfo(liquids));
         System.out.println("Ingredients left: " + getElementsInfo(ingredients));
 
         productsCooked.forEach((k, v) -> {
-            System.out.println(k + ":" + v);
+            System.out.println(k + ": " + v);
         });
     }
 
@@ -63,18 +64,12 @@ public class P01_Cooking {
                 : deque
                 .stream()
                 .map(String::valueOf)
-                .collect(Collectors.joining());
+                .collect(Collectors.joining(", "));
     }
 
     private static boolean hasCookedEachMeal(Map< String, Integer> productsCooked) {
-        for (Integer count : productsCooked.values()) {
-           if (count == 0) {
-               return false;
-           }
+        return productsCooked.values().stream().noneMatch(c -> c == 0);
         }
-
-        return true;
-    }
 
     private static boolean ableToCockProduct(int sum) {
         return sum == 25 || sum == 50 || sum == 75 || sum == 100;

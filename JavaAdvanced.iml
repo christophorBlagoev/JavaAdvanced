@@ -21,7 +21,6 @@
       <excludeFolder url="file://$MODULE_DIR$/Java Advanced" />
       <excludeFolder url="file://$MODULE_DIR$/Java OOP" />
       <excludeFolder url="file://$MODULE_DIR$/Java Advanced/Exams/Java Advanced Exam - 25 October 2020" />
-      <excludeFolder url="file://$MODULE_DIR$/Java Advanced/Exams/E2020_October_16/P03_Openning/Openning/src/bakery" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
