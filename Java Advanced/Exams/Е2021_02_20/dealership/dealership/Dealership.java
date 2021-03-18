@@ -1,42 +1,18 @@
-package E2020_06_28.P03_Parking.parking.parking;
+package dealership;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class
-Parking {
-    private String type;
+public class Dealership {
+
+    private String name;
     private int capacity;
     private List<Car> data;
 
-    public Parking(String type, int capacity) {
-        this.type = type;
+    public Dealership(String name, int capacity) {
+        this.name = name;
         this.capacity = capacity;
         this.data = new ArrayList<>();
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
-    public List< Car > getData() {
-        return data;
-    }
-
-    public void setData(List< Car > data) {
-        this.data = data;
     }
 
     public void add(Car car) {
@@ -45,7 +21,7 @@ Parking {
         }
     }
 
-    public boolean remove(String manufacturer, String model) {
+    public boolean buy(String manufacturer, String model) {
         return this.data.removeIf(car -> (car.getManufacturer().equals(manufacturer) && car.getModel().equals(model)));
     }
 
@@ -63,9 +39,33 @@ Parking {
     }
 
     public String getStatistics() {
-        StringBuilder output = new StringBuilder("The cars are parked in ");
-        output.append(getType()).append(":").append(System.lineSeparator());
+        StringBuilder output = new StringBuilder("The cars are in a car dealership ");
+        output.append(getName()).append(":").append(System.lineSeparator());
         data.forEach(e -> output.append(e).append(System.lineSeparator()));
         return output.toString();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public List< Car > getData() {
+        return data;
+    }
+
+    public void setData(List< Car > data) {
+        this.data = data;
     }
 }
